@@ -1,9 +1,10 @@
 @extends('backend.welcome')
 @section('content') 
 
-<!-- ======= About Section ======= -->
+<!--  About Section  -->
 <section id="about" class="about">
     <div class="container">
+
 
         <div class="section-title">
             <h2>About</h2>
@@ -65,12 +66,19 @@
 
         </div>
 
+        view
+
+
 
     </div>
 </section><!-- End About Section -->
 
-<!-- ======= Skills Section ======= -->
+<!--  Skills Section  -->
+
 <section id="skills" class="skills section-bg">
+
+{{-- <section id="skills" class="skills section-bg">
+
     <div class="container">
 
     <div class="section-title">
@@ -83,22 +91,36 @@
     <div class="row skills-content">
 
         <div class="col-lg-6" data-aos="fade-up">
+
             @foreach
                 <div class="col-auto">
                     <input type="text" class="form-control" id="inputPassword2" name="skill1" placeholder="Skill Name">
                 </div>
                 <div class="col-auto">
                     <input type="text" class="form-control" id="inputPassword2" name="level1" placeholder="Level">
+
+            <form class="row g-3">
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Skill Name">
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Level">
+
                 </div>
                 <div class="progress">
                     <div class="progress-bar-wrap">
                         <div class="mb-3">
+
                             <input type="text" class="form-control" id="exampleFormControlInput1" name="percentage1" placeholder="percentage">
+
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="percentage">
+
                         </div>
                     </div>
                 </div>
 
                 <div class="col-auto">
+
                     <input type="text" class="form-control" id="inputPassword2" name="skill2" placeholder="Skill Name">
                 </div>
                 <div class="col-auto">
@@ -116,10 +138,17 @@
                 </div>
                 <div class="col-auto">
                     <input type="text" class="form-control" id="inputPassword2" name="level3" placeholder="Level">
+
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Skill Name">
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Level">
+
                 </div>
                 <div class="progress">
                     <div class="progress-bar-wrap">
                         <div class="mb-3">
+
                             <input type="text" class="form-control" id="exampleFormControlInput1" name="percentage3" placeholder="percentage">
                         </div>
                     </div>
@@ -168,10 +197,23 @@
                 </div>
                 <div class="col-auto">
                     <input type="text" class="form-control" id="inputPassword2" name="level7" placeholder="Level">
+
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="percentage">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Skill Name">
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Level">
+
                 </div>
                 <div class="progress">
                     <div class="progress-bar-wrap">
                         <div class="mb-3">
+
                             <input type="text" class="form-control" id="exampleFormControlInput1" name="percentage7" placeholder="percentage">
                         </div>
                     </div>
@@ -181,22 +223,46 @@
                 </div>
                 <div class="col-auto">
                     <input type="text" class="form-control" id="inputPassword2" name="level8" placeholder="Level">
+
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="percentage">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Skill Name">
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Level">
+
                 </div>
                 <div class="progress">
                     <div class="progress-bar-wrap">
                         <div class="mb-3">
+
                             <input type="text" class="form-control" id="exampleFormControlInput1" name="percentage8" placeholder="percentage">
                         </div>
                     </div>
                 </div>
             @endforeach
 
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="percentage">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
         </div>
 
     </div>
 
     </div>
+
 </section>
+
+</section> --}}
+
 <!-- End Skills Section -->
 
 @endsection
