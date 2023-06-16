@@ -32,6 +32,7 @@ class AboutController extends Controller
             'email' => $request->email,
             'address' => $request->address,
             'website' => $request->web,
+            'skill_desc' => $request->skilldesc,
             'created_at' =>  Carbon::now()
     	]);
 
