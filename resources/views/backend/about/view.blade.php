@@ -65,11 +65,6 @@
             @endforeach
 
         </div>
-
-        view
-
-
-
     </div>
 </section><!-- End About Section -->
 
