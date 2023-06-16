@@ -44,10 +44,10 @@ class AboutController extends Controller
 		return redirect()->route('about-view')->with($notification);
     }
 
-    public function Edit($id){
-        $abouts = About::findOrFail($id);
+    public function Edit(){
+        // $abouts = About::findOrFail($id);
         // dd($abouts);
-        return view('backend.about.edit',compact('abouts'));
+        return view('backend.about.edit');
     }
 
     public function Update(Request $request){
