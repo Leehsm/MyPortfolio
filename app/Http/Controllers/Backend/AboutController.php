@@ -44,7 +44,29 @@ class AboutController extends Controller
 		return redirect()->route('about-view')->with($notification);
     }
 
-    public function Edit(){
-        return view('backend.about.edit');
+    public function Edit($id){
+        $abouts = About::findOrFail($id);
+        // dd($abouts);
+        return view('backend.about.edit',compact('abouts'));
+    }
+
+    public function Update(Request $request){
+        $id = $request->id;
+        About::findOrFail($id)->update([
+            'description' => $request->desc,
+            'current_title' => $request->jobtitle,
+            'detail' => $request->jobtitledesc,
+            'birthdate' => $request->birthdate,
+            'age' => $request->age,
+            'education' => $request->edu,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'address' => $request->address,
+            'website' => $request->web,
+            'skill_desc' => $request->skilldesc,
+            'updated_at' =>  Carbon::now()
+    	]);
+
+        return redirect()->route('about-view')->with($notification);
     }
 }
