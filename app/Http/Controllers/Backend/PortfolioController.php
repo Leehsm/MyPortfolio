@@ -18,4 +18,15 @@ class PortfolioController extends Controller
     public function Edit(){
         return view('backend.portfolio.edit');
     }
+
+
+    
+
+    public function ProjAdd(){
+        return view('backend.portfolio.proj.add');
+    }
+
+    public function ProjEdit(){
+        return view('backend.portfolio.proj.edit');
+    }
 }

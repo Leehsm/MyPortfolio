@@ -5,7 +5,7 @@
     <div class="container">
         <div class="section-title">
             <h2>Resume</h2>
-            <form method="post" action="{{ route('portfolio-add') }}" >
+            <form method="post" action="{{ route('resume-Descstore') }}" >
                 @csrf
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Description</label>
