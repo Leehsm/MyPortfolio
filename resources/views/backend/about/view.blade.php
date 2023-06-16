@@ -8,11 +8,12 @@
 
         <div class="section-title">
             <h2>About</h2>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="{{ route('about-add') }}" class="btn btn-primary me-md-2" type="button">ADD</a>
-                <a href="{{ route('about-edit') }}"class="btn btn-primary" type="button">EDIT</a>
-            </div>
+            
             @foreach($abouts as $about)
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="{{ route('about-add') }}" class="btn btn-primary me-md-2" type="button">ADD</a>
+                    <a href="{{ route('about-edit', $about->id) }}"class="btn btn-primary" type="button">EDIT</a>
+                </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Description</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="2">{{$about->description}}</textarea>
