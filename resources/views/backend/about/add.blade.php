@@ -59,6 +59,11 @@
                     <input type="text" class="form-control" id="exampleFormControlInput1" name="web">
                 </div>
 
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Skill Desc</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="skilldesc">
+                </div>
+
                 <div class="text-xs-right">
                     <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Submit">					 
                 </div>
