@@ -16,7 +16,9 @@
                 <tbody>
                   @foreach ($desc as $item)
                   <tr>
-                    <td>{{ $item->description }}</td>
+                    <td>
+                      <a>{{ $item->Description }}</a>
+                    </td>
                     <td>       
                         <a href="{{ route('resume-Descedit', $item->id) }}"class="btn btn-primary" type="button">EDIT</a>
                     </td>
