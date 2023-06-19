@@ -10,22 +10,22 @@
                 <h2>Education</h2>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Certificate</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="cert" >
+                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="cert" value="{{ $edu->education }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Year</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="year" >
+                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="year" value="{{ $edu->year }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">University</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="uni" >
+                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="uni" value="{{ $edu->university }}">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Detail</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail" >
+                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail" value="{{ $edu->detail }}">
                 </div>
                 <div class="text-xs-right">
                     <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Submit">					 
