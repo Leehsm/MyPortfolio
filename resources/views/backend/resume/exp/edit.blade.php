@@ -24,43 +24,36 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 1</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail1" value="{{ $exp->detail1 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 1</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail1" rows="3">{{ $exp->detail1 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 2</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail2" value="{{ $exp->detail2 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 2</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail2" rows="3">{{ $exp->detail2 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 3</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail3" value="{{ $exp->detail3 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 3</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail3" rows="3">{{ $exp->detail3 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 4</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail4" value="{{ $exp->detail4 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 4</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail4" rows="3">{{ $exp->detail4 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 5</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail5" value="{{ $exp->detail5 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 5</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail5" rows="3">{{ $exp->detail5 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 6</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail6" value="{{ $exp->detail6 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 6</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail6" rows="3">{{ $exp->detail6 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 7</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail7" value="{{ $exp->detail7 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 7</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail7" rows="3">{{ $exp->detail7 }}</textarea>
                 </div>
-
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Detail 8</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="detail8" value="{{ $exp->detail8 }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detail 8</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="detail8" rows="3">{{ $exp->detail8 }}</textarea>
                 </div>
 
                 <div class="text-xs-right">

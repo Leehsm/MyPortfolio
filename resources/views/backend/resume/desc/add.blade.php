@@ -8,8 +8,8 @@
             <form method="post" action="{{ route('resume-Descstore') }}" >
                 @csrf
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="desc" >
+                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3"></textarea>
                 </div>
 
                 <div class="text-xs-right">
