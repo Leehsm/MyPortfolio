@@ -9,7 +9,7 @@
                 @csrf
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="desc" value="{{  }}">
+                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="desc" value="{{ $desc->Description }}">
                 </div>
 
                 <div class="text-xs-right">
