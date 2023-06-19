@@ -73,21 +73,25 @@ Route::get('/resume-view', [ResumeController::class, 'View'])->name('resume-view
 Route::get('/resume-Descadd', [ResumeController::class, 'DescAdd'])->name('resume-Descadd');
 Route::post('/resume-Descstore', [ResumeController::class, 'DescStore'])->name('resume-Descstore');
 Route::get('/resume-Descedit/{id}', [ResumeController::class, 'DescEdit'])->name('resume-Descedit');
+Route::post('/resume-Descupdate', [ResumeController::class, 'DescUpdate'])->name('resume-Descupdate');
 
 // Route::get('/resume-Summaryview', [ResumeController::class, 'SummaryView'])->name('resume-Summaryview');
 Route::get('/resume-Summaryadd', [ResumeController::class, 'SummaryAdd'])->name('resume-Summaryadd');
 Route::post('/resume-Summarystore', [ResumeController::class, 'SummaryStore'])->name('resume-Summarystore');
 Route::get('/resume-Summaryedit/{id}', [ResumeController::class, 'SummaryEdit'])->name('resume-Summaryedit');
+Route::post('/resume-Summaryupdate', [ResumeController::class, 'SummaryUpdate'])->name('resume-Summaryupdate');
 
 // Route::get('/resume-Eduview', [ResumeController::class, 'EduView'])->name('resume-Eduview');
 Route::get('/resume-Eduadd', [ResumeController::class, 'EduAdd'])->name('resume-Eduadd');
 Route::post('/resume-Edustore', [ResumeController::class, 'EduStore'])->name('resume-Edustore');
 Route::get('/resume-Eduedit/{id}', [ResumeController::class, 'EduEdit'])->name('resume-Eduedit');
+Route::post('/resume-Eduupdate', [ResumeController::class, 'EduUpdate'])->name('resume-Eduupdate');
 
 // Route::get('/resume-Expview', [ResumeController::class, 'ExpView'])->name('resume-Expview');
 Route::get('/resume-Expadd', [ResumeController::class, 'ExpAdd'])->name('resume-Expadd');
 Route::post('/resume-Expstore', [ResumeController::class, 'ExpStore'])->name('resume-Expstore');
 Route::get('/resume-Expedit/{id}', [ResumeController::class, 'ExpEdit'])->name('resume-Expedit');
+Route::post('/resume-Expupdate', [ResumeController::class, 'ExpUpdate'])->name('resume-Expupdate');
 
 
 //Social Media
