@@ -14,16 +14,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {{-- @foreach ($desc as $item) --}}
+                  @foreach ($desc as $item)
                   <tr>
-                    <td>
-                      <a>Descripiton</a>
-                    </td>
+                    <td>{{ $item->description }}</td>
                     <td>       
-                        <a href="{{ route('portfolio-edit') }}"class="btn btn-primary" type="button">EDIT</a>
+                        <a href="{{ route('portfolio-edit', $item->id) }}"class="btn btn-primary" type="button">EDIT</a>
                     </td>
                   </tr>
-                  {{-- @endforeach --}}
+                  @endforeach
                 </tbody>
             </table>
 
@@ -38,15 +36,17 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {{-- @foreach ( $summary as $item ) --}}
+                  @foreach ( $proj as $item )
                   <tr>
-                    <td>Image</td>
-                    <td>detail</td>
-                    <td>       
-                        <a href="{{ route('portfolio-projedit') }}" class="btn btn-primary me-md-2" type="button">EDIT</a>
-                    </td>
+                    <td><img src="{{ asset($item->image) }}" style="width: 70px; height: 40px;"> </td>
+                      <td>
+                        <a>{{ $item->project_desc }}</a>
+                      </td>
+                      <td>       
+                          <a href="{{ route('portfolio-projedit', $item->id) }}" class="btn btn-primary me-md-2" type="button">EDIT</a>
+                      </td>
                   </tr>
-                  {{-- @endforeach --}}
+                  @endforeach
                 </tbody>
             </table>
         </div>

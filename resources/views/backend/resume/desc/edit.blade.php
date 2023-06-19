@@ -8,8 +8,8 @@
             <form method="post" action="{{ route('resume-Descupdate') }}" >
                 @csrf
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="exampleFormControlinput type=" name="desc" value="{{ $desc->Description }}">
+                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3">{{ $desc->Description }}</textarea>
                 </div>
 
                 <div class="text-xs-right">
