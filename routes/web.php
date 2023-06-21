@@ -25,7 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', [IndexController::class, 'Index']);
-Route::post('/', [IndexController::class, 'Message'])->name('message');
+// Route::post('/', [IndexController::class, 'Message'])->name('message');
 
 
 //Backend
