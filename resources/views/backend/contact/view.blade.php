@@ -4,38 +4,35 @@
 <!--  About Section  -->
 <section id="about" class="about">
     <div class="container">
-
-
         <div class="section-title">
             <h2>Contact</h2>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="{{ route('contact-add') }}" class="btn btn-primary me-md-2" type="button">ADD</a>
-                <a href="{{ route('contact-edit') }}"class="btn btn-primary" type="button">EDIT</a>
-            </div>
-            {{-- <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Description</label>
-                <input type="text" class="form-control" id="exampleFormControlinput type=" name="desc" value="{{ $contacts->description}}">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="text" class="form-control" id="exampleFormControlinput type=" name="email" value="{{ $contacts->email}}">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                <input type="text" class="form-control" id="exampleFormControlinput type=" name="phone" value="{{ $contacts->phone}}">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Address</label>
-                <input type="text" class="form-control" id="exampleFormControlinput type=" name="address" value="{{ $contacts->address}}">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">location URL</label>
-                <input type="text" class="form-control" id="exampleFormControlinput type=" name="location" value="{{ $contacts->location}}">
-            </div> --}}
+            <a href="{{ route('contact-add') }}" class="btn btn-primary me-md-2" type="button">ADD</a>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    {{-- <th>Location Url</th> --}}
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @foreach ( $contacts as $item )
+                  <tr>
+                    <td>{{ $item->description }}</td>
+                    <td>{{ $item->email }}</td>
+                    <td>{{ $item->phone }}</td>
+                    <td>{{ $item->address }}</td>
+                    {{-- <td>{{ $item->location }}</td> --}}
+                    <td>       
+                        <a href="{{ route('contact-edit', $item->id) }}" class="btn btn-primary me-md-2" type="button">EDIT</a>
+                    </td>
+                  </tr>
+                  @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
 </section><!-- End About Section -->

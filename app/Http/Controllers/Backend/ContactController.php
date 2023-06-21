@@ -28,10 +28,35 @@ class ContactController extends Controller
             'created_at' => Carbon::now()
         ]);
 
-        return redirect()->route('contact-view')->with($notification);
+        $notification = array(
+			'message' => 'Contact Inserted Successfully',
+			'alert-type' => 'success'
+		);
+
+		return redirect()->route('contact-view')->with($notification);
     }
 
-    public function Edit(){
-        return view('backend.contact.edit');
+    public function Edit($id){
+        $contact = Contact::findOrFail($id);
+        return view('backend.contact.edit', compact('contact'));
+    }
+
+    public function Update(Request $request){
+        
+        Contact::findOrFail($request->id)->update([
+            'description' => $request->desc,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'address'=> $request->address,
+            'location' => $request->location,
+            'updated_at' => Carbon::now()
+        ]);
+
+        $notification = array(
+			'message' => 'Contact Updated Successfully',
+			'alert-type' => 'success'
+		);
+
+		return redirect()->route('contact-view')->with($notification);
     }
 }
