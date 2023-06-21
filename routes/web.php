@@ -42,9 +42,11 @@ Route::get('/about-edit', [AboutController::class, 'Edit'])->name('about-edit');
 Route::post('/about-update', [AboutController::class, 'Update'])->name('about-update');
 
 //Skill
+Route::get('/skill-view', [SkillController::class, 'View'])->name('skill-view');
 Route::get('/skill-add', [SkillController::class, 'Add'])->name('skill-add');
 Route::post('/skill-store', [SkillController::class, 'Store'])->name('skill-store');
-Route::get('/skill-edit', [SkillController::class, 'Edit'])->name('skill-edit');
+Route::get('/skill-edit/{id}', [SkillController::class, 'Edit'])->name('skill-edit');
+Route::post('/skill-update', [SkillController::class, 'Update'])->name('skill-update');
 
 //Resume
 Route::get('/resume-view', [ResumeController::class, 'View'])->name('resume-view');
