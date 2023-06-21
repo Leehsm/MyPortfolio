@@ -34,7 +34,6 @@ Route::get('/hihi', function () {
 //Home
 Route::get('/home', [HomeController::class, 'home'])->name('home');
 
-
 //About
 Route::get('/about-view', [AboutController::class, 'View'])->name('about-view');
 Route::get('/about-add', [AboutController::class, 'Add'])->name('about-add');
@@ -54,24 +53,20 @@ Route::post('/resume-Descstore', [ResumeController::class, 'DescStore'])->name('
 Route::get('/resume-Descedit/{id}', [ResumeController::class, 'DescEdit'])->name('resume-Descedit');
 Route::post('/resume-Descupdate', [ResumeController::class, 'DescUpdate'])->name('resume-Descupdate');
 
-// Route::get('/resume-Summaryview', [ResumeController::class, 'SummaryView'])->name('resume-Summaryview');
 Route::get('/resume-Summaryadd', [ResumeController::class, 'SummaryAdd'])->name('resume-Summaryadd');
 Route::post('/resume-Summarystore', [ResumeController::class, 'SummaryStore'])->name('resume-Summarystore');
 Route::get('/resume-Summaryedit/{id}', [ResumeController::class, 'SummaryEdit'])->name('resume-Summaryedit');
 Route::post('/resume-Summaryupdate', [ResumeController::class, 'SummaryUpdate'])->name('resume-Summaryupdate');
 
-// Route::get('/resume-Eduview', [ResumeController::class, 'EduView'])->name('resume-Eduview');
 Route::get('/resume-Eduadd', [ResumeController::class, 'EduAdd'])->name('resume-Eduadd');
 Route::post('/resume-Edustore', [ResumeController::class, 'EduStore'])->name('resume-Edustore');
 Route::get('/resume-Eduedit/{id}', [ResumeController::class, 'EduEdit'])->name('resume-Eduedit');
 Route::post('/resume-Eduupdate', [ResumeController::class, 'EduUpdate'])->name('resume-Eduupdate');
 
-// Route::get('/resume-Expview', [ResumeController::class, 'ExpView'])->name('resume-Expview');
 Route::get('/resume-Expadd', [ResumeController::class, 'ExpAdd'])->name('resume-Expadd');
 Route::post('/resume-Expstore', [ResumeController::class, 'ExpStore'])->name('resume-Expstore');
 Route::get('/resume-Expedit/{id}', [ResumeController::class, 'ExpEdit'])->name('resume-Expedit');
 Route::post('/resume-Expupdate', [ResumeController::class, 'ExpUpdate'])->name('resume-Expupdate');
-
 
 //Portfolio
 Route::get('/portfolio-view', [PortfolioController::class, 'View'])->name('portfolio-view');
@@ -85,13 +80,12 @@ Route::post('/portfolio-projstore', [PortfolioController::class, 'ProjStore'])->
 Route::get('/portfolio-projedit/{id}', [PortfolioController::class, 'ProjEdit'])->name('portfolio-projedit');
 Route::post('/portfolio-projupdate', [PortfolioController::class, 'ProjUpdate'])->name('portfolio-projupdate');
 
-
 //Contact
 Route::get('/contact-view', [ContactController::class, 'View'])->name('contact-view');
 Route::get('/contact-add', [ContactController::class, 'Add'])->name('contact-add');
 Route::post('/contact-store', [ContactController::class, 'Store'])->name('contact-store');
-Route::get('/contact-edit', [ContactController::class, 'Edit'])->name('contact-edit');
-
+Route::get('/contact-edit/{id}', [ContactController::class, 'Edit'])->name('contact-edit');
+Route::post('/contact-update', [ContactController::class, 'Update'])->name('contact-update');
 
 //Social Media
 Route::get('/socmed-view', [SocmedController::class, 'View'])->name('socmed-view');
