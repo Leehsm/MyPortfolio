@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
+  <title>Leehsm Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,15 +43,7 @@
 
   <main id="main">
 
-    {{-- @yield('content') --}}
-    @include('frontend.about')
-    @include('frontend.resume')
-    @include('frontend.portfolio')
-    @include('frontend.contact')
-    {{-- ABOUT --}}
-    {{-- RESUME --}}
-    {{-- PORTFOLIO --}}
-    {{-- CONTACT --}}
+    @yield('content')
 
   </main><!-- End #main -->
 
