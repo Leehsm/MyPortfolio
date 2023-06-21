@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\PortfolioController;
@@ -23,6 +24,8 @@ use App\Http\Controllers\Backend\SkillController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', [IndexController::class, 'Index']);
+Route::post('/', [IndexController::class, 'Message'])->name('message');
 
 
 //Backend
