@@ -89,7 +89,8 @@ Route::post('/contact-update', [ContactController::class, 'Update'])->name('cont
 
 //Social Media
 Route::get('/socmed-view', [SocmedController::class, 'View'])->name('socmed-view');
-Route::post('/socmed-add', [SocmedController::class, 'Add'])->name('socmed-add');
+Route::get('/socmed-add', [SocmedController::class, 'Add'])->name('socmed-add');
 Route::post('/socmed-store', [SocmedController::class, 'Store'])->name('socmed-store');
-Route::get('/socmed-edit', [SocmedController::class, 'Edit'])->name('socmed-edit');
+Route::get('/socmed-edit/{id}', [SocmedController::class, 'Edit'])->name('socmed-edit');
+Route::post('/socmed-update', [SocmedController::class, 'Update'])->name('socmed-update');
 
