@@ -34,7 +34,7 @@ Leehsm Portfolio
                     <div class="col-lg-6">
                     <ul>
                         <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ $abt->age }}</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>{{ $abt->education }}</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>{{ $abt->education }}</span></li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{ $abt->email }}</span></li>
                         {{-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> --}}
                     </ul>
@@ -135,7 +135,7 @@ Leehsm Portfolio
                         @if($exp->detail1 != null)
                             <li>{{ $exp->detail1 }}</li>
                         @endif
-                        @if($exp->detail12 != null)
+                        @if($exp->detail2 != null)
                             <li>{{ $exp->detail2 }}</li>
                         @endif
                         @if($exp->detail3 != null)
@@ -216,63 +216,61 @@ Leehsm Portfolio
 
     <div class="row" data-aos="fade-in">
 
-        <div class="col-lg-5 d-flex align-items-stretch">
+        {{-- <div class="col-lg-5 d-flex align-items-stretch"> --}}
         <div class="info">
             <div class="address">
-            <i class="bi bi-geo-alt"></i>
-            <h4>Location:</h4>
-            <p>{{ $contacts->address }}</p>
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>{{ $contacts->address }}</p>
             </div>
 
             <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>Email:</h4>
-            <p>{{ $contacts->email }}</p>
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>{{ $contacts->email }}</p>
             </div>
 
             <div class="phone">
-            <i class="bi bi-phone"></i>
-            <h4>Call:</h4>
-            <p>{{ $contacts->phone }}</p>
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>{{ $contacts->phone }}</p>
             </div>
 
             <iframe src="{{ $contacts->location }}" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            
         </div>
         @endforeach
 
-        </div>
+        {{-- </div> --}}
 
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-        <form method="post" action="{{ route('message') }}" class="php-email-form">
-            @csrf
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" required>
+        {{-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form method="post" action="{{ route('message') }}" class="php-email-form">
+                @csrf
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="name">Your Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
+
+                <div class="form-group">
+                    <label for="name">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject" required>
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-            </div>
-            {{-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div> --}}
-            <div class="text-center">
-                <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Send Message">
-            </div>
-        </form>
-        </div>
+
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-rounded btn-primary mb-5" value="Send Message">
+                </div>
+            </form>
+        </div> --}}
 
     </div>
 

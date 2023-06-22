@@ -25,7 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', [IndexController::class, 'Index']);
-Route::post('/', [IndexController::class, 'Message'])->name('message');
+// Route::post('/', [IndexController::class, 'Message'])->name('message');
 
 
 //Backend
@@ -41,7 +41,7 @@ Route::get('/home', [HomeController::class, 'home'])->name('home');
 Route::get('/about-view', [AboutController::class, 'View'])->name('about-view');
 Route::get('/about-add', [AboutController::class, 'Add'])->name('about-add');
 Route::post('/about-store', [AboutController::class, 'Store'])->name('about-store');
-Route::get('/about-edit', [AboutController::class, 'Edit'])->name('about-edit');
+Route::get('/about-edit/{id}', [AboutController::class, 'Edit'])->name('about-edit');
 Route::post('/about-update', [AboutController::class, 'Update'])->name('about-update');
 
 //Skill
