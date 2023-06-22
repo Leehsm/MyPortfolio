@@ -34,7 +34,7 @@ Leehsm Portfolio
                     <div class="col-lg-6">
                     <ul>
                         <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ $abt->age }}</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>{{ $abt->education }}</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>{{ $abt->education }}</span></li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{ $abt->email }}</span></li>
                         {{-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> --}}
                     </ul>
@@ -135,7 +135,7 @@ Leehsm Portfolio
                         @if($exp->detail1 != null)
                             <li>{{ $exp->detail1 }}</li>
                         @endif
-                        @if($exp->detail12 != null)
+                        @if($exp->detail2 != null)
                             <li>{{ $exp->detail2 }}</li>
                         @endif
                         @if($exp->detail3 != null)
