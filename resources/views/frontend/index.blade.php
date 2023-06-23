@@ -194,7 +194,7 @@ Leehsm Portfolio
                     <img src="{{ $proj->image }}" class="img-fluid" alt="">
                     <div class="portfolio-links">
                     <a href="{{ $proj->image }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $proj->project_desc }}"><i class="bx bx-plus"></i></a>
-                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                    <a href="" title="More Details"><i class="bx bx-link"></i></a>
                     </div>
                 </div>
             </div>            
