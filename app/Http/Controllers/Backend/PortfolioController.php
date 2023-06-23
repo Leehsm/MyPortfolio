@@ -65,7 +65,7 @@ class PortfolioController extends Controller
     public function ProjStore(Request $request){
         $image = $request->file('image');
     	$name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
-    	Image::make($image)->resize(800,600)->save('upload/portfolio/'.$name_gen);
+    	Image::make($image)->resize(800,500)->save('upload/portfolio/'.$name_gen);
     	$save_url = 'upload/portfolio/'.$name_gen;
 
         Portfolio::insert([
@@ -95,7 +95,7 @@ class PortfolioController extends Controller
             unlink($old_img);
             $image = $request->file('image');
             $name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
-            Image::make($image)->resize(800,600)->save('upload/portfolio/'.$name_gen);
+            Image::make($image)->resize(800,500)->save('upload/portfolio/'.$name_gen);
             $save_url = 'upload/portfolio/'.$name_gen;
 
             Portfolio::findOrFail($request->id)->update([
